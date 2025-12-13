@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-13_15-38-54",
+            "content": "@@ -1,8 +1,27 @@\n+@@ -1,152 +0,0 @@%0A-\n class An\n@@ -25,17 +25,19 @@\n  Animal:\n-%0A\n+%250A\n     def \n@@ -61,17 +61,19 @@\n me:str):\n-%0A\n+%250A\n         \n@@ -88,22 +88,26 @@\n e = nome\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     def \n@@ -124,25 +124,27 @@\n _nome(self):\n-%0A\n+%250A\n         prin\n@@ -146,17 +146,19 @@\n  print(f\n-%22\n+%2522\n Eu sou u\n@@ -166,9 +166,11 @@\n (a) \n-%7B\n+%257B\n self\n@@ -178,86 +178,13 @@\n nome\n-%7D!%22)%0A%0A    def fazer_som(self):%0A        pass%0A    %0A    def mover(self):%0A        pass\n+%257D!%2522)%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-12-13_15-52-14",
+            "content": "@@ -227,215 +227,4 @@\n pass\n-%0A    %0A    class Leao(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Som: ROAAAR!%22)%0A%0A    def mover(self):%0A        print(%22Movimento: Correndo.%22)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-12-13_15-54-03",
+            "content": "@@ -229,17 +229,20 @@\n ss%0A    %0A\n-%0A\n+    \n class Le\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-12-13_15-54-24",
+            "content": "@@ -435,79 +435,4 @@\n o.%22)\n-%0A%0Aleao = Leao(%22Simba%22)%0Aleao.apresentar_nome()%0Aleao.fazer_som()%0Aleao.mover()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-12-13_15-54-59",
+            "content": "@@ -433,18 +433,16 @@\n ndo.%22)%0A%0A\n-# \n leao = L\n@@ -454,18 +454,16 @@\n Simba%22)%0A\n-# \n leao.apr\n@@ -477,18 +477,16 @@\n _nome()%0A\n-# \n leao.faz\n@@ -498,10 +498,8 @@\n m()%0A\n-# \n leao\n@@ -510,238 +510,4 @@\n er()\n-%0A%0Aclass Elefante(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Som: FUUUUUM! (Trombeta)%22)%0A%0A    def mover(self):%0A        print(%22Movimento: Passos pesados e lentos.%22)\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-12-13_15-56-54",
+            "content": "@@ -670,17 +670,16 @@\n Trombeta\n-s\n )%22)%0A%0A   \n@@ -752,99 +752,4 @@\n s.%22)\n-%0A%0Aelefante = Elefante(%22Dumbo%22)%0Aelefante.apresentar_nome()%0Aelefante.fazer_som()%0Aelefante.mover()\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-12-13_15-59-51",
+            "content": "@@ -125,17 +125,18 @@\n %22Eu sou \n-o\n+um\n (a) %7Bsel\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-13_16-00-19",
+            "content": "@@ -356,16 +356,21 @@\n  print(%22\n+Som: \n ROAAAR!%22\n@@ -412,16 +412,27 @@\n nt(%22\n+Movimento: \n Correndo\n %22)%0A%0A\n@@ -427,16 +427,17 @@\n Correndo\n+.\n %22)%0A%0A# le\n@@ -650,16 +650,21 @@\n nt(%22\n+Som: \n FUUUUUM!\n %22)%0A%0A\n@@ -659,16 +659,28 @@\n FUUUUUM!\n+ (Trombetas)\n %22)%0A%0A    \n@@ -711,16 +711,27 @@\n  print(%22\n+Movimento: \n Passos p\n@@ -745,22 +745,21 @@\n e lentos\n+.\n %22)%0A%0A\n-# \n elefante\n@@ -779,18 +779,16 @@\n Dumbo%22)%0A\n-# \n elefante\n@@ -806,18 +806,16 @@\n _nome()%0A\n-# \n elefante\n@@ -827,18 +827,16 @@\n r_som()%0A\n-# \n elefante\n@@ -847,277 +847,4 @@\n er()\n-%0A%0Aclass Cobra(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Sssssss!%22)%0A%0A    def mover(self):%0A        print(%22Rastejando%22)%0A%0Acobra = Cobra(%22Nagini%22)%0Acobra.apresentar_nome()%0Acobra.fazer_som()%0Acobra.mover()%0A%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-13_16-03-33",
+            "content": "@@ -1,1097 +1,243 @@\n-class Animal:%0A    def __init__(self, nome:str):%0A        self.nome = nome%0A    %0A    def apresentar_nome(self):%0A        print(f%22Eu sou o(a) %7Bself.nome%7D!%22)%0A%0A    def fazer_som(self):%0A        pass%0A    %0A    def mover(self):%0A        pass%0A    %0A%0Aclass Leao(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22ROAAAR!%22)%0A%0A    def mover(self):%0A        print(%22Correndo%22)%0A%0A# leao = Leao(%22Simba%22)%0A# leao.apresentar_nome()%0A# leao.fazer_som()%0A# leao.mover()%0A%0Aclass Elefante(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22FUUUUUM!%22)%0A%0A    def mover(self):%0A        print(%22Passos pesados e lentos%22)%0A%0A# elefante = Elefante(%22Dumbo%22)%0A# elefante.apresentar_nome()%0A# elefante.fazer_som()%0A# elefante.mover()%0A%0Aclass Cobra(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Sssssss!%22)%0A%0A    def mover(self):%0A        print(%22Rastejando%22)%0A%0A# cobra = Cobra(%22Nagini%22)%0A# cobra.apresentar_nome()%0A# cobra.fazer_som()%0A# cobra.mover()%0A%0A\n+@@ -997,18 +997,16 @@%0A ando%2522)%250A%250A%0A-# %0A cobra = %0A@@ -1021,18 +1021,16 @@%0A agini%2522)%250A%0A-# %0A cobra.ap%0A@@ -1045,18 +1045,16 @@%0A _nome()%250A%0A-# %0A cobra.fa%0A@@ -1063,18 +1063,16 @@%0A r_som()%250A%0A-# %0A cobra.mo%0A@@ -1082,185 +1082,4 @@%0A ()%250A%250A%0A-\n def \n@@ -263,17 +263,19 @@\n Animal):\n-%0A\n+%250A\n     prin\n@@ -280,17 +280,23 @@\n int(\n-%22-%22\n+%2522-%2522\n  * 5)\n-%0A\n+%250A\n     \n@@ -319,17 +319,19 @@\n r_nome()\n-%0A\n+%250A\n     anim\n@@ -344,17 +344,19 @@\n er_som()\n-%0A\n+%250A\n     anim\n@@ -369,15 +369,21 @@\n er()\n-%0A\n+%250A\n     \n-%0A%0A\n+%250A%250A\n     \n@@ -389,17 +389,19 @@\n  print(f\n-%22\n+%2522\n Tipo da \n@@ -412,9 +412,11 @@\n se: \n-%7B\n+%257B\n type\n@@ -436,9 +436,12 @@\n me__\n-%7D%22) e\n+%257D%2522)%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-12-13_16-09-36",
+            "content": "@@ -1267,8 +1267,10 @@\n ame__%7D%22)\n+ e\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-12-13_16-09-53",
+            "content": "@@ -1271,256 +1271,4 @@\n _%7D%22)\n-%0A%0Aif __name__ == %22__main__%22:%0A    leao = Leao(%22Simba%22)%0A    elefante = Elefante(%22Dumbo%22)%0A    cobra = Cobra(%22Nagini%22)%0A%0A    zoologico = %5Bleao, elefante, cobra%5D%0A%0A    print(%22=== VISITA AO ZOOL%C3%93GICO ===%22)%0A%0A    for bicho in zoologico:%0A        apresentar(bicho)\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-12-13_16-10-38",
+            "content": "class Animal:\n    def __init__(self, nome:str):\n        self.nome = nome\n    \n    def apresentar_nome(self):\n        print(f\"Eu sou o(a) {self.nome}!\")\n\n    def fazer_som(self):\n        pass\n    \n    def mover(self):\n        pass\n    \n\nclass Leao(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"ROAAAR!\")\n\n    def mover(self):\n        print(\"Correndo\")\n\n# leao = Leao(\"Simba\")\n# leao.apresentar_nome()\n# leao.fazer_som()\n# leao.mover()\n\nclass Elefante(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"FUUUUUM!\")\n\n    def mover(self):\n        print(\"Passos pesados e lentos\")\n\n# elefante = Elefante(\"Dumbo\")\n# elefante.apresentar_nome()\n# elefante.fazer_som()\n# elefante.mover()\n\nclass Cobra(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"Sssssss!\")\n\n    def mover(self):\n        print(\"Rastejando\")\n\n# cobra = Cobra(\"Nagini\")\n# cobra.apresentar_nome()\n# cobra.fazer_som()\n# cobra.mover()\n\ndef apresentar(animal: Animal):\n    print(\"-\" * 5)\n    animal.apresentar_nome()\n    animal.fazer_som()\n    animal.mover()\n    \n\n    print(f\"Tipo da Classe: {type(animal).__name__}\")\n\nif __name__ == \"__main__\":\n    leao = Leao(\"Simba\")\n    elefante = Elefante(\"Dumbo\")\n    cobra = Cobra(\"Nagini\")\n\n    zoologico = [leao, elefante, cobra]\n\n    print(\"=== VISITA AO ZOOL\u00d3GICO ===\")\n\n    for bicho in zoologico:\n        apresentar(bicho)",
+            "lines": "79"
+        }
+    ]
+}
