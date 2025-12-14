@@ -122,3 +122,4 @@
 2025-12-14 15:40:09, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0, size:81
 2025-12-14 15:41:02, MOVE, v:1, k:poo@pagamento, mode:BACK
 2025-12-14 15:41:54, SELF, v:1, k:poo@pagamento, rate:90, guide:s, alone:6, study:140
+2025-12-14 15:45:51, SELF, v:1, k:poo@pagamento, rate:90, guide:s, alone:9, study:140
