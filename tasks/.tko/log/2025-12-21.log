@@ -1,0 +1,102 @@
+2025-12-21 22:22:16, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-21 22:22:18, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:50
+2025-12-21 22:23:23, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-21 22:24:55, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-21 22:24:56, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:50
+2025-12-21 22:25:06, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-21 22:27:27, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-21 22:27:28, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:138
+2025-12-21 22:28:15, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:50, size:139
+2025-12-21 22:30:25, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-21 22:30:50, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-21 22:30:52, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:100, size:146
+2025-12-21 22:30:59, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-21 22:32:09, SELF, v:1, k:poo@estacionamento, rate:100, human:s, iagen:s, alone:9, study:120
+2025-12-21 22:33:45, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-21 22:33:46, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:100, size:137
+2025-12-21 22:33:55, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:100
+2025-12-21 22:33:56, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:100
+2025-12-21 22:33:56, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-21 22:34:20, MOVE, v:1, k:poo@cofre, mode:DOWN
+2025-12-21 22:34:24, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:34:26, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:34:59, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:35:01, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:0
+2025-12-21 22:39:35, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0
+2025-12-21 22:43:59, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:22
+2025-12-21 22:44:14, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:44:34, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:44:35, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:26
+2025-12-21 22:45:12, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:26
+2025-12-21 22:45:12, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0
+2025-12-21 22:46:57, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:21
+2025-12-21 22:46:59, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0
+2025-12-21 22:47:17, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:23
+2025-12-21 22:47:20, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:47:54, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:47:56, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:26
+2025-12-21 22:47:56, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:51:23, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:51:25, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:35
+2025-12-21 22:51:26, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:52:37, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:52:40, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:42
+2025-12-21 22:52:40, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:54:33, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:54:33, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:54
+2025-12-21 22:57:26, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:54
+2025-12-21 22:58:46, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:54
+2025-12-21 22:58:53, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 22:59:32, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 22:59:34, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:57
+2025-12-21 22:59:39, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:01:09, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:01:11, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:63
+2025-12-21 23:01:48, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:68
+2025-12-21 23:03:50, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:75
+2025-12-21 23:03:51, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:05:01, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:05:05, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:78
+2025-12-21 23:05:06, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:05:56, SELF, v:1, k:poo@zoo, rate:100, human:s, alone:10, study:40
+2025-12-21 23:08:34, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:08:37, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0
+2025-12-21 23:08:45, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:86
+2025-12-21 23:08:45, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:16:50, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:16:53, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:97
+2025-12-21 23:16:53, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:17:30, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:17:33, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:103
+2025-12-21 23:17:34, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:20:20, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:20:23, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:111
+2025-12-21 23:20:27, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:22:49, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:22:52, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:115
+2025-12-21 23:22:53, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:28:35, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:28:36, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:175
+2025-12-21 23:30:06, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:177
+2025-12-21 23:31:37, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:177
+2025-12-21 23:32:22, EXEC, v:1, k:poo@cofre, mode:FULL, rate:10, size:177
+2025-12-21 23:32:56, EXEC, v:1, k:poo@cofre, mode:FULL, rate:30, size:177
+2025-12-21 23:33:03, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:36:06, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:36:06, EXEC, v:1, k:poo@cofre, mode:FULL, rate:0, size:177
+2025-12-21 23:37:09, EXEC, v:1, k:poo@cofre, mode:FULL, rate:20, size:180
+2025-12-21 23:37:22, EXEC, v:1, k:poo@cofre, mode:FULL, rate:20, size:179
+2025-12-21 23:38:26, EXEC, v:1, k:poo@cofre, mode:FULL, rate:20, size:179
+2025-12-21 23:38:43, EXEC, v:1, k:poo@cofre, mode:FULL, rate:60, size:179
+2025-12-21 23:38:46, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:42:33, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:42:35, EXEC, v:1, k:poo@cofre, mode:FULL, rate:60, size:179
+2025-12-21 23:43:10, EXEC, v:1, k:poo@cofre, mode:FULL, rate:30, size:179
+2025-12-21 23:43:15, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:43:22, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:43:23, EXEC, v:1, k:poo@cofre, mode:FULL, rate:30
+2025-12-21 23:44:25, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:46:06, MOVE, v:1, k:poo@cofre, mode:PICK
+2025-12-21 23:46:08, EXEC, v:1, k:poo@cofre, mode:FULL, rate:100, size:179
+2025-12-21 23:46:16, MOVE, v:1, k:poo@cofre, mode:BACK
+2025-12-21 23:46:58, SELF, v:1, k:poo@cofre, rate:100, guide:s, alone:7, study:120

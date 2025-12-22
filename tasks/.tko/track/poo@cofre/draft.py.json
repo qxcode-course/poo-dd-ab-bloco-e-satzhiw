@@ -1,0 +1,179 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-21_22-35-01",
+            "content": "@@ -1,420 +0,0 @@\n-from abc import ABC, abstractmethod%0Afrom enum import Enum%0A%0Aclass Valuable(ABC):%0A    @abstractmethod%0A    def getLabel(self) -%3E str:%0A        pass%0A%0A    @abstractmethod%0A    def getValue(self) -%3E float:%0A        pass%0A%0A    @abstractmethod%0A    def getVolume(self) -%3E int:%0A        pass%0A%0Aclass Coin(Valuable, Enum):%0A    M10 = (0.10, 1, %22M10%22)%0A    M25 = (0.25, 2, %22M25%22)%0A    M50 = (0.50, 3, %22M50%22)%0A    M100 = (1.00, 4, %22M100%22)%0A    \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-12-21_22-43-59",
+            "content": "@@ -413,136 +413,8 @@\n 0%22)%0A\n-%0A\n     \n-def __init__(self, value, volume, label):%0A        self._value = value%0A        self._volume = volume%0A        self._label = label\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-12-21_22-44-35",
+            "content": "@@ -299,16 +299,127 @@\n  Enum):%0A\n+    M10 = (0.10, 1, %22M10%22)%0A    M25 = (0.25, 2, %22M25%22)%0A    M50 = (0.50, 3, %22M50%22)%0A    M100 = (1.00, 4, %22M100%22)%0A%0A\n     def \n@@ -545,119 +545,4 @@\n abel\n-%0A    %0A    M10 = (0.10, 1, %22M10%22)%0A    M25 = (0.25, 2, %22M25%22)%0A    M50 = (0.50, 3, %22M50%22)%0A    M100 = (1.00, 4, %22M100%22)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-12-21_22-45-11",
+            "content": "@@ -66,17 +66,42 @@\n Valuable\n-:\n+(ABC):%0A    @abstractmethod\n %0A    def\n@@ -128,32 +128,53 @@\n tr:%0A        pass\n+%0A%0A    @abstractmethod\n %0A    def getValu\n@@ -203,16 +203,37 @@\n     pass\n+%0A%0A    @abstractmethod\n %0A    def\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-12-21_22-46-57",
+            "content": "@@ -236,123 +236,8 @@\n m):%0A\n-    M10 = (0.10, 1, %22M10%22)%0A    M25 = (0.25, 2, %22M25%22)%0A    M50 = (0.50, 3, %22M50%22)%0A    M100 = (1.00, 4, %22M100%22)%0A    %0A\n     \n@@ -368,12 +368,118 @@\n bel%0A    %0A   \n+ M10 = (0.10, 1, %22M10%22)%0A    M25 = (0.25, 2, %22M25%22)%0A    M50 = (0.50, 3, %22M50%22)%0A    M100 = (1.00, 4, %22M100%22)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-12-21_22-47-17",
+            "content": "@@ -491,67 +491,4 @@\n %0A   \n- def getLabel(self) -%3E str:%0A        return self._label%0A    %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-12-21_22-47-56",
+            "content": "@@ -554,219 +554,4 @@\n %0A   \n- def getValue(self) -%3E float:%0A        return self._value%0A%0A    def getVolume(self) -%3E int:%0A        return self._volume%0A%0A    def __str__(self):%0A        return f%22%7Bself._label%7D:%7Bself._value:.2f%7D:%7Bself._volume%7D%22%0A    %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-12-21_22-51-25",
+            "content": "@@ -766,181 +766,7 @@\n    %0A\n-class Item(Valuable):%0A%0A    def __init__(self, label: str, volume: int, value: float):%0A        self.label = label%0A        self.volume = volume%0A        self.value = value%0A    %0A\n    \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-12-21_22-52-40",
+            "content": "@@ -639,18 +639,17 @@\n  -%3E int:\n-s\n %0A\n+\n         \n@@ -784,16 +784,17 @@\n uable):%0A\n+%0A\n     def \n@@ -940,311 +940,7 @@\n    %0A\n+\n    \n-def getLabel(self) -%3E str:%0A        return self.label%0A%0A    def getValue(self) -%3E float:%0A        return self.value%0A%0A    def getVolume(self) -%3E int:%0A        return self.volume%0A%0A    def setLabel(self, label: str):%0A        self.label = label%0A%0A    def setVolume(self, volume: int):%0A        self.volume = volume\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-12-21_22-54-33",
+            "content": "@@ -631,32 +631,33 @@\n me(self) -%3E int:\n+s\n %0A        return \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-12-21_22-57-26",
+            "content": "@@ -930,33 +930,32 @@\n = value%0A    %0A   \n- \n def getLabel(sel\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-12-21_22-58-46",
+            "content": "@@ -1247,94 +1247,4 @@\n lume\n-%0A    %0A    def __str__(self):%0A        return f%22%7Bself.label%7D:%7Bself.value:.2f%7D:%7Bself.volume%7D%22\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-12-21_22-59-34",
+            "content": "@@ -1337,151 +1337,4 @@\n me%7D%22\n-%0A    %0Aclass Pig:%0A    def __init__(self, volumeMax: int):%0A        self.volumeMax = volumeMax%0A        self.broken = False%0A        self.valuables = %5B%5D\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-12-21_23-01-11",
+            "content": "@@ -1484,158 +1484,4 @@\n = %5B%5D\n-%0A    %0A    def addValuable(self, valuable: Valuable) -%3E bool:%0A        if self.broken:%0A            print(%22fail: the pig is broken%22)%0A            return False\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-12-21_23-01-48",
+            "content": "@@ -1638,223 +1638,4 @@\n alse\n-%0A        %0A        if self.getVolume() + valuable.getVolume() %3E self.volumeMax:%0A            print(%22fail: the pig is full%22)%0A            return False%0A        %0A        self.valuables.append(valuable)%0A        return Truesss%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-12-21_23-03-50",
+            "content": "@@ -1853,84 +1853,8 @@\n True\n-%0A    def breakPig(self) -%3E bool:%0A        self.broken = True%0A        return True\n+sss\n %0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-12-21_23-05-05",
+            "content": "@@ -1933,313 +1933,4 @@\n rue%0A\n-    def getCoins(self) -%3E list:%0A        if not self.broken:%0A            print(%22fail: you must break the pig first%22)%0A            return %5B%5D%0A  %0A        coins = %5Bv for v in self.valuables if isinstance(v, Coin)%5D%0A        self.valuables = %5Bv for v in self.valuables if not isinstance(v, Coin)%5D%0A        return coins%0A\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-12-21_23-08-45",
+            "content": "@@ -1842,37 +1842,32 @@\n     return True%0A\n-    %0A\n     def breakPig\n@@ -1874,32 +1874,32 @@\n (self) -%3E bool:%0A\n+\n         self.bro\n@@ -1929,21 +1929,16 @@\n rn True%0A\n-    %0A\n     def \n@@ -2209,32 +2209,32 @@\n tance(v, Coin)%5D%0A\n+\n         return c\n@@ -2242,320 +2242,4 @@\n ins%0A\n-    %0A    def getItems(self) -%3E list:%0A        if not self.broken:%0A            print(%22fail: you must break the pig first%22)%0A            return %5B%5D%0A    %0A        items = %5Bv for v in self.valuables if isinstance(v, Item)%5D%0A        self.valuables = %5Bv for v in self.valuables if not isinstance(v, Item)%5D%0A        return items%0A\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-12-21_23-16-53",
+            "content": "@@ -2568,151 +2568,4 @@\n ems%0A\n-    %0A    def calcValue(self) -%3E float:%0A        total = 0.0%0A        for v in self.valuables:%0A            total += v.getValue()%0A        return total%0A\n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-12-21_23-17-33",
+            "content": "@@ -2715,193 +2715,4 @@\n tal%0A\n-    %0A    def getVolume(self) -%3E int:%0A        if self.broken:%0A            return 0%0A        total = 0%0A        for v in self.valuables:%0A            total += v.getVolume()%0A        return total%0A\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-12-21_23-20-23",
+            "content": "@@ -2904,75 +2904,4 @@\n tal%0A\n-    %0A    def getVolumeMax(self) -%3E int:%0A        return self.volumeMax%0A%0A\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-12-21_23-22-52",
+            "content": "@@ -2975,1801 +2975,4 @@\n ax%0A%0A\n-    def isBroken(self) -%3E bool:%0A        return self.broken%0A%0A    def __str__(self):%0A        lista_str = %22%5B%22 + %22, %22.join(str(v) for v in self.valuables) + %22%5D%22%0A        %0A        state = %22broken%22 if self.broken else %22intact%22%0A        valor = self.calcValue()%0A        vol = self.getVolume()%0A        %0A        return f%22%7Blista_str%7D : %7Bvalor:.2f%7D$ : %7Bvol%7D/%7Bself.volumeMax%7D : %7Bstate%7D%22%0A%0Adef main():%0A    pig = Pig(0)%0A%0A    while True:%0A        try:%0A            line = input()%0A        except EOFError:%0A            break%0A            %0A        if not line:%0A            continue%0A            %0A        print(%22$%22 + line)%0A        args%5B0%5D = line.split()%0A%0A        if  args%5B0%5D == %22end%22:%0A            break%0A        elif  args%5B0%5D == %22init%22:%0A            pig = Pig(int(parts%5B1%5D))%0A        elif  args%5B0%5D == %22show%22:%0A            print(pig)%0A        elif  args%5B0%5D == %22addCoin%22:%0A            valor = int(parts%5B1%5D)%0A            if valor == 10:   pig.addValuable(Coin.M10)%0A            elif valor == 25: pig.addValuable(Coin.M25)%0A            elif valor == 50: pig.addValuable(Coin.M50)%0A            elif valor == 100: pig.addValuable(Coin.M100)%0A        # elif cmd == %22addItem%22:%0A        #     label = parts%5B1%5D%0A        #     value = float(parts%5B2%5D)%0A        #     volume = int(parts%5B3%5D)%0A        #     item = Item(label, volume, value)%0A        #     pig.addValuable(item)%0A        # elif cmd == %22break%22:%0A        #     pig.breakPig()%0A        # elif cmd == %22extractCoins%22:%0A        #     if pig.isBroken():%0A        #         print(%22%5B%22 + %22, %22.join(str(c) for c in pig.getCoins()) + %22%5D%22)%0A        #     else:%0A        #         pig.getCoins()%0A        # elif cmd == %22extractItems%22:%0A        #     if pig.isBroken():%0A        #         print(%22%5B%22 + %22, %22.join(str(i) for i in pig.getItems()) + %22%5D%22)%0A        #     else:%0A        #         pig.getItems()%0A%0A%0Amain()%0A\n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-12-21_23-28-36",
+            "content": "@@ -3391,16 +3391,20 @@\n e True:%0A\n+    \n     try:\n@@ -3404,16 +3404,16 @@\n    try:%0A\n-\n         \n@@ -3482,48 +3482,8 @@\n     \n-    except Exception:%0A            break%0A\n     \n@@ -3529,17 +3529,29 @@\n ontinue%0A\n+            \n %0A\n-\n         \n@@ -3580,16 +3580,19 @@\n     args\n+%5B0%5D\n  = line.\n@@ -3601,11 +3601,8 @@\n lit(\n-%22 %22\n )%0A%0A \n",
+            "lines": "175"
+        },
+        {
+            "label": "2025-12-21_23-30-06",
+            "content": "@@ -3391,20 +3391,16 @@\n e True:%0A\n-    \n     try:\n",
+            "lines": "177"
+        },
+        {
+            "label": "2025-12-21_23-31-37",
+            "content": "@@ -3735,19 +3735,20 @@\n Pig(int(\n+p\n ar\n-g\n+t\n s%5B1%5D))%0A \n",
+            "lines": "177"
+        },
+        {
+            "label": "2025-12-21_23-32-22",
+            "content": "@@ -3857,27 +3857,28 @@\n valor = int(\n+p\n ar\n-g\n+t\n s%5B1%5D)%0A      \n",
+            "lines": "177"
+        },
+        {
+            "label": "2025-12-21_23-32-56",
+            "content": "@@ -4096,32 +4096,33 @@\n n.M100)%0A        \n+#\n  elif cmd == %22ad\n@@ -4133,24 +4133,25 @@\n m%22:%0A        \n+#\n      label =\n@@ -4164,24 +4164,25 @@\n %5B1%5D%0A        \n+#\n      value =\n@@ -4202,24 +4202,25 @@\n 2%5D)%0A        \n+#\n      volume \n@@ -4239,24 +4239,25 @@\n 3%5D)%0A        \n+#\n      item = \n@@ -4283,32 +4283,33 @@\n  value)%0A        \n+#\n      pig.addValu\n@@ -4323,28 +4323,25 @@\n em)%0A        \n-    \n+#\n  elif cmd ==\n@@ -4354,24 +4354,25 @@\n k%22:%0A        \n+#\n      pig.bre\n",
+            "lines": "177"
+        },
+        {
+            "label": "2025-12-21_23-36-06",
+            "content": "@@ -4104,37 +4104,25 @@\n         \n-%0A        elif args%5B0%5D\n+ elif cmd\n  == %22add\n@@ -4185,19 +4185,20 @@\n = float(\n+p\n ar\n-g\n+t\n s%5B2%5D)%0A  \n@@ -4221,20 +4221,20 @@\n e = int(\n+p\n ar\n-gs\n+t\n s%5B3%5D)%0A  \n@@ -4325,29 +4325,21 @@\n     \n-%0A \n      \n-  \n elif \n-args%5B0%5D\n+cmd\n  == \n@@ -4379,22 +4379,8 @@\n g()%0A\n-             %0A\n     \n",
+            "lines": "177"
+        },
+        {
+            "label": "2025-12-21_23-37-09",
+            "content": "@@ -4394,16 +4394,30 @@\n akPig()%0A\n+             %0A\n         \n",
+            "lines": "180"
+        },
+        {
+            "label": "2025-12-21_23-37-22",
+            "content": "@@ -4161,19 +4161,20 @@\n label = \n+p\n ar\n-g\n+t\n s%5B1%5D%0A   \n",
+            "lines": "179"
+        },
+        {
+            "label": "2025-12-21_23-38-26",
+            "content": "@@ -4235,16 +4235,17 @@\n int(args\n+s\n %5B3%5D)%0A   \n",
+            "lines": "179"
+        },
+        {
+            "label": "2025-12-21_23-38-43",
+            "content": "@@ -4399,30 +4399,27 @@\n %0A       \n+ #\n  elif \n-args%5B0%5D \n+cmd\n  == %22ext\n@@ -4434,24 +4434,25 @@\n s%22:%0A        \n+#\n      if pig.\n@@ -4463,32 +4463,33 @@\n oken():%0A        \n+#\n          print(%22\n@@ -4546,24 +4546,25 @@\n %5D%22)%0A        \n+#\n      else:%0A \n@@ -4562,32 +4562,33 @@\n   else:%0A        \n+#\n          pig.get\n",
+            "lines": "179"
+        },
+        {
+            "label": "2025-12-21_23-42-35",
+            "content": "@@ -4597,24 +4597,26 @@\n ns()%0A       \n+ #\n  elif cmd ==\n@@ -4632,32 +4632,33 @@\n Items%22:%0A        \n+#\n      if pig.isBr\n@@ -4665,32 +4665,33 @@\n oken():%0A        \n+#\n          print(%22\n@@ -4744,32 +4744,33 @@\n  + %22%5D%22)%0A        \n+#\n      else:%0A     \n@@ -4764,32 +4764,33 @@\n   else:%0A        \n+#\n          pig.get\n",
+            "lines": "179"
+        },
+        {
+            "label": "2025-12-21_23-43-10",
+            "content": "@@ -4603,31 +4603,27 @@\n        elif \n-args%5B0%5D\n+cmd\n  == %22extract\n",
+            "lines": "179"
+        },
+        {
+            "label": "2025-12-21_23-46-08",
+            "content": "from abc import ABC, abstractmethod\nfrom enum import Enum\n\nclass Valuable:\n    def getLabel(self) -> str:\n        pass\n    def getValue(self) -> float:\n        pass\n    def getVolume(self) -> int:\n        pass\n\nclass Coin(Valuable, Enum):\n    M10 = (0.10, 1, \"M10\")\n    M25 = (0.25, 2, \"M25\")\n    M50 = (0.50, 3, \"M50\")\n    M100 = (1.00, 4, \"M100\")\n    \n    def __init__(self, value, volume, label):\n        self._value = value\n        self._volume = volume\n        self._label = label\n    \n    def getLabel(self) -> str:\n        return self._label\n    \n    def getValue(self) -> float:\n        return self._value\n\n    def getVolume(self) -> int:\n        return self._volume\n\n    def __str__(self):\n        return f\"{self._label}:{self._value:.2f}:{self._volume}\"\n    \nclass Item(Valuable):\n    def __init__(self, label: str, volume: int, value: float):\n        self.label = label\n        self.volume = volume\n        self.value = value\n    \n    def getLabel(self) -> str:\n        return self.label\n\n    def getValue(self) -> float:\n        return self.value\n\n    def getVolume(self) -> int:\n        return self.volume\n\n    def setLabel(self, label: str):\n        self.label = label\n\n    def setVolume(self, volume: int):\n        self.volume = volume\n    \n    def __str__(self):\n        return f\"{self.label}:{self.value:.2f}:{self.volume}\"\n    \nclass Pig:\n    def __init__(self, volumeMax: int):\n        self.volumeMax = volumeMax\n        self.broken = False\n        self.valuables = []\n    \n    def addValuable(self, valuable: Valuable) -> bool:\n        if self.broken:\n            print(\"fail: the pig is broken\")\n            return False\n        \n        if self.getVolume() + valuable.getVolume() > self.volumeMax:\n            print(\"fail: the pig is full\")\n            return False\n        \n        self.valuables.append(valuable)\n        return True\n    \n    def breakPig(self) -> bool:\n        self.broken = True\n        return True\n    \n    def getCoins(self) -> list:\n        if not self.broken:\n            print(\"fail: you must break the pig first\")\n            return []\n  \n        coins = [v for v in self.valuables if isinstance(v, Coin)]\n        self.valuables = [v for v in self.valuables if not isinstance(v, Coin)]\n        return coins\n    \n    def getItems(self) -> list:\n        if not self.broken:\n            print(\"fail: you must break the pig first\")\n            return []\n    \n        items = [v for v in self.valuables if isinstance(v, Item)]\n        self.valuables = [v for v in self.valuables if not isinstance(v, Item)]\n        return items\n    \n    def calcValue(self) -> float:\n        total = 0.0\n        for v in self.valuables:\n            total += v.getValue()\n        return total\n    \n    def getVolume(self) -> int:\n        if self.broken:\n            return 0\n        total = 0\n        for v in self.valuables:\n            total += v.getVolume()\n        return total\n    \n    def getVolumeMax(self) -> int:\n        return self.volumeMax\n\n    def isBroken(self) -> bool:\n        return self.broken\n\n    def __str__(self):\n        lista_str = \"[\" + \", \".join(str(v) for v in self.valuables) + \"]\"\n        \n        state = \"broken\" if self.broken else \"intact\"\n        valor = self.calcValue()\n        vol = self.getVolume()\n        \n        return f\"{lista_str} : {valor:.2f}$ : {vol}/{self.volumeMax} : {state}\"\n\ndef main():\n    pig = Pig(0)\n\n    while True:\n        try:\n            line = input()\n        except EOFError:\n            break\n        except Exception:\n            break\n        \n        if not line:\n            continue\n\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if  args[0] == \"end\":\n            break\n        elif  args[0] == \"init\":\n            pig = Pig(int(args[1]))\n        elif  args[0] == \"show\":\n            print(pig)\n        elif  args[0] == \"addCoin\":\n            valor = int(args[1])\n            if valor == 10:   pig.addValuable(Coin.M10)\n            elif valor == 25: pig.addValuable(Coin.M25)\n            elif valor == 50: pig.addValuable(Coin.M50)\n            elif valor == 100: pig.addValuable(Coin.M100)\n        \n        elif args[0] == \"addItem\":\n             label = args[1]\n             value = float(args[2])\n             volume = int(args[3])\n             item = Item(label, volume, value)\n             pig.addValuable(item)\n        \n        elif args[0] == \"break\":\n             pig.breakPig()\n        elif args[0]  == \"extractCoins\":\n             if pig.isBroken():\n                 print(\"[\" + \", \".join(str(c) for c in pig.getCoins()) + \"]\")\n             else:\n                 pig.getCoins()\n        elif args[0] == \"extractItems\":\n             if pig.isBroken():\n                 print(\"[\" + \", \".join(str(i) for i in pig.getItems()) + \"]\")\n             else:\n                 pig.getItems()\n\n\nmain()\n",
+            "lines": "179"
+        }
+    ]
+}
